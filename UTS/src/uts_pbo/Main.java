@@ -8,6 +8,7 @@ public class Main {
 
         int jumlah_penumpang = 5;
         int max_penumpang = 20;
+        System.out.flush();
         System.out.println("-----------------------------------------");
         System.out.println("OUTPUT : ");
         System.out.println("-----------------------------------------");
@@ -23,9 +24,9 @@ public class Main {
             System.out.print("Masukkan Penumpang yang Ingin Turun! ");
 
             int temp = input.nextInt();
+            System.out.println(temp + " Penumpang Turun");
             temp = porong.getPenumpang() - temp;
 
-            System.out.println(temp + " Penumpang Turun");
             System.out.println(porong.getWait() + " Penumpang Naik");
 
             temp = temp + porong.getWait();
@@ -78,7 +79,9 @@ public class Main {
             System.out.println(grs + " Bus Menuju ke Halte Porong");
 
             jumlah_penumpang = grs;
-        } while (jumlah_penumpang <= 20);
+
+
+        } while (jumlah_penumpang <= max_penumpang);
         input.close();
     }
 }
