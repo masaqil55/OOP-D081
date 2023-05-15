@@ -25,15 +25,20 @@ public class Lunox extends HeroMage {
         this.skill4P = skill4;
     }
 
-    public void comboSkill () {
-        System.out.print(this.getSkill2()+" -> ");
-        System.out.print("Passive Activated "+this.getPassive());
-        System.out.print(" -> "+this.skill4C+" \nYou Will Convert 80% CD to Magic Penetration");
-        System.out.print(" -> "+this.getSkill3());
-        System.out.print(" -> "+getSkill2() + " Spam This Skill");
-        System.out.println("\nIf Enemy Come on You, Use This "+this.getSkill1() + " Spam 2x This Skill");
-        System.out.print(" -> "+ this.getSkill4P());
-        System.out.print(" \nFunction : You Will Immune Of All Damage and CC");
-        System.out.print(" \nand You Will Convert 120% CD to Physical and Magic Defense\n");
+    public void nameOfSkill () {
+        System.out.println("Many Name of Skill Lunox : ");
+        System.out.print("Passive Lunox : ");
+        System.out.print(this.getPassive());
+        System.out.print("\n1 Skill Lunox : ");
+        System.out.print(this.getSkill1());
+        System.out.print("\n2 Skill Lunox");
+        System.out.print(this.getSkill2());
+        System.out.print("\n3 Skill Lunox");
+        System.out.print(this.getSkill3());
+        System.out.print("\nUltimate Lunox When Passive Turn Into Purple : ");
+        System.out.print(this.getSkill4C());
+        System.out.print("\nUltimate Lunox When Pasive Turn into Yellow : ");
+        System.out.print(this.getSkill4P());
+        System.out.println("\n");
     }
 }

@@ -32,7 +32,10 @@ public class Main {
             case 3 :
                 System.out.println("Anda Memilih Lunox, Berikut Combo Skill nya : ");
                 Lunox hero3 = new Lunox("Dreamland Twist", "Starlight Pulse", "Chaos Assault", "Cosmic Fission", "Power of Chaos : Darkening", "Power of Order : Brilliance");
-                hero3.comboSkill();
+                hero3.nameOfSkill();
+                lunoxComboSkill skillLunox = new lunoxComboSkill("Dreamland Twist", "Starlight Pulse", "Chaos Assault", "Cosmic Fission", "Power of Chaos : Darkening", "Power of Order : Brilliance");
+                System.out.println("This a Combo Skill Lunox : ");
+                skillLunox.comboSkill();
                 break;
         }
 
